@@ -1,0 +1,16 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="user in users">
+            <td><img src="{{user.picture.thumbnail}}" /></td>
+            <td>{{user.first}} {{user.last}}</td>
+            <td><a href="#/details/{{$index}}">Details</a></td>
+        </tr>
+    </tbody>
+</table>

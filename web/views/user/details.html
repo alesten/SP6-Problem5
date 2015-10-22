@@ -1,0 +1,22 @@
+<style>
+    span{
+        margin-left: 20px;
+    }
+</style>
+
+<h1>Details for {{user.first}} {{user.last}}</h1>
+
+<label class="label label-info">Gender</label><span>{{user.gender}}</span><br>
+<label class="label label-info">First Name</label><span>{{user.first}}</span><br>
+<label class="label label-info">Last Name</label><span>{{user.last}}</span><br>
+<label class="label label-info">Street</label><span>{{user.street}}</span><br>
+<label class="label label-info">City</label><span>{{user.city}}</span><br>
+<label class="label label-info">zip</label><span>{{user.zip}}</span><br>
+<label class="label label-info">Phone</label><span>{{user.phone}}</span><br>
+<label class="label label-info">Cell</label><span>{{user.cell}}</span><br>
+<label class="label label-info">Email</label><span>{{user.email}}</span><br>
+
+<img src="{{user.picture.large}}" />
+
+<br><br><br>
+<a href="#/list"><div class="btn btn-info">Go back</div><a>
